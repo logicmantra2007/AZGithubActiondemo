@@ -1,4 +1,4 @@
-name: build project
+name: build java project
 on:
   workflow_dispatch:
   push:
@@ -16,4 +16,4 @@ jobs:
         with:
           distribution: "temurin" # See 'Supported distributions' for available options
           java-version: "21"
-      - run: java HelloWorldApp.java
+      - run: java src/main/java/com/example/demo/DemoApplication.java
