@@ -1,4 +1,4 @@
-ame: build project
+name: build project
 on:
   workflow_dispatch:
   push:
