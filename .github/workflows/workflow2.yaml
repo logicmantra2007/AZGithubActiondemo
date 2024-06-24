@@ -1,0 +1,19 @@
+ame: build project
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: BuildCheckout
+        uses: actions/checkout@v4
+      - name: BuildJavaEnvironment
+        uses: actions/setup-java@v4
+        with:
+          distribution: "temurin" # See 'Supported distributions' for available options
+          java-version: "21"
+      - run: java HelloWorldApp.java
