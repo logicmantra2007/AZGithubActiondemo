@@ -1,0 +1,11 @@
+name: build project
+on:
+  push:
+    branches: -main
+
+jobs:
+  buildjob1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: buildstep1
+        users: actions/checkout@v4
