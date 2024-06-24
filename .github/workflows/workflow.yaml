@@ -1,8 +1,9 @@
 name: build project
 on:
+  workflow_dispatch:
   push:
     branches:
-      - side
+      - main
 
 jobs:
   buildjob1:
